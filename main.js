@@ -168,7 +168,7 @@ END:VCARD`;
     modalBody.innerHTML = `
       <div class="modal-dossier">
         <div class="modal-dossier__portrait-wrap">
-          <img src="${teamDossiers.cutout}" alt="${data.name}" class="modal-dossier__portrait-img" />
+          <img src="${data.cutout}" alt="${data.name}" class="modal-dossier__portrait-img" />
           <div class="modal-dossier__caption">ZenLyft Leadership Archive</div>
         </div>
 
