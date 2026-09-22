@@ -80,11 +80,11 @@ document.addEventListener('DOMContentLoaded', () => {
       name: "Niresh Senthoor U",
       role: "Founder & Chief Executive Officer",
       tag: "REF #01 // EXECUTIVE LEADERSHIP",
-      cutout: "./Images/niresh senthoor.png",
+      cutout: "./Images/Niresh senthoor.png",
       bio: "Directing product strategy, high-level architecture, and vision across all ZenLyft ventures. Focused on building intelligent digital products that turn real-world complexity into simple, accessible experiences.",
       email: "niresh@zenlyft.in",
       phone: "+91 8015929139",
-      linkedin: "papercut-person papercut-person--pravinraj",
+      linkedin: "https://www.linkedin.com/in/niresh-senthoor/",
       skills: ["Product Strategy", "System Architecture", "Executive Leadership", "Platform Scaling", "UX Vision"]
     },
     sanjay: {
