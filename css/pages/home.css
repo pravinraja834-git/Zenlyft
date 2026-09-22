@@ -1,0 +1,277 @@
+/* ============================================================
+   ZenLyft Official Startup Company Website : Homepage Styles
+   ============================================================ */
+
+/* ============================================================
+   HERO SECTION
+   ============================================================ */
+.hero {
+  padding-top: calc(var(--nav-height) + var(--sp-2));
+  padding-bottom: var(--sp-6);
+  position: relative;
+  overflow: hidden;
+  border-bottom: 1px solid var(--color-border-subtle);
+}
+
+@media (min-width: 992px) {
+  .hero {
+    padding-top: calc(var(--nav-height) + var(--sp-3));
+    padding-bottom: var(--sp-8);
+  }
+}
+
+.hero__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+  align-items: center;
+}
+
+@media (min-width: 992px) {
+  .hero__grid {
+    grid-template-columns: 1.1fr 0.9fr;
+    gap: var(--sp-8);
+  }
+}
+
+.hero__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.hero__headline {
+  margin-bottom: var(--sp-3);
+  max-width: 640px;
+}
+
+.hero__supporting {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+  margin-bottom: var(--sp-5);
+  max-width: 580px;
+}
+
+.hero__ctas {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--sp-3);
+}
+
+/* ============================================================
+   HERO ECOSYSTEM VISUAL (Paper-Cut Interactive Stage)
+   ============================================================ */
+.ecosystem-container {
+  background-color: #FAF7F2;
+  border: 2px solid #1C1917;
+  padding: var(--sp-5);
+  position: relative;
+  box-shadow: 8px 8px 0px #1C1917;
+}
+
+.ecosystem-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 2px dashed #D6CEBE;
+  padding-bottom: var(--sp-3);
+  margin-bottom: var(--sp-4);
+}
+
+.ecosystem-title {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #1C1917;
+}
+
+.ecosystem-badge {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #FAF7F2;
+  background-color: #1C1917;
+  border: 1px solid #1C1917;
+  padding: 2px 10px;
+}
+
+.ecosystem-badge__dot {
+  width: 6px;
+  height: 6px;
+  background-color: #C85A32;
+}
+
+.ecosystem-flow {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-3);
+  position: relative;
+}
+
+.ecosystem-node {
+  background-color: #F5F0E6;
+  border: 2px solid #1C1917;
+  padding: var(--sp-3) var(--sp-4);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  transition: transform var(--t-fast), box-shadow var(--t-fast), background-color var(--t-fast);
+  cursor: default;
+  box-shadow: 3px 3px 0px #1C1917;
+}
+
+.ecosystem-node:hover,
+.ecosystem-node--active {
+  border-color: #1C1917;
+  background-color: #FAF7F2;
+  transform: translate(-2px, -2px);
+  box-shadow: 5px 5px 0px #C85A32;
+}
+
+.ecosystem-node__info {
+  display: flex;
+  flex-direction: column;
+}
+
+.ecosystem-node__step {
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  color: #C85A32;
+  text-transform: uppercase;
+}
+
+.ecosystem-node__name {
+  font-family: var(--font-display);
+  font-size: 1.15rem;
+  font-weight: 700;
+  color: #1C1917;
+}
+
+.ecosystem-node__desc {
+  font-size: 0.85rem;
+  color: #57534E;
+}
+
+.ecosystem-connector {
+  height: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.ecosystem-connector__line {
+  width: 2px;
+  height: 100%;
+  background-color: #1C1917;
+}
+
+/* ============================================================
+   SECTIONS CUSTOM STYLING
+   ============================================================ */
+/* Vision & Philosophy Editorial Layout */
+.vision-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+@media (min-width: 768px) {
+  .vision-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-5);
+  }
+}
+
+.vision-block {
+  background-color: #FAF7F2;
+  border: 2px solid #1C1917;
+  border-left: 5px solid #C85A32;
+  padding: var(--sp-5);
+  box-shadow: 5px 5px 0px #1C1917;
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+
+.vision-block:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #C85A32;
+}
+
+.vision-block__title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1C1917;
+  margin-bottom: var(--sp-2);
+}
+
+.vision-block__text {
+  font-size: 0.98rem;
+  color: #57534E;
+  line-height: 1.65;
+}
+
+/* Technology Pillars Layout */
+.tech-pills {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--sp-2);
+  margin-top: var(--sp-4);
+}
+
+.tech-pill {
+  background-color: #F5F0E6;
+  border: 1.5px solid #1C1917;
+  color: #1C1917;
+  font-family: var(--font-mono);
+  font-size: 0.85rem;
+  font-weight: 700;
+  padding: 0.5rem 1rem;
+  box-shadow: 2px 2px 0px #1C1917;
+  transition: transform var(--t-fast), box-shadow var(--t-fast);
+}
+
+.tech-pill:hover {
+  background-color: #FAF7F2;
+  color: #C85A32;
+  transform: translate(-1px, -1px);
+  box-shadow: 4px 4px 0px #C85A32;
+}
+
+/* Future Vision Card */
+.future-hero-box {
+  background: #FAF7F2;
+  border: 3px solid #1C1917;
+  padding: var(--sp-8);
+  max-width: 860px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  box-shadow: 8px 8px 0px #1C1917;
+}
+
+.future-hero-box__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+  font-weight: 700;
+  color: #1C1917;
+  margin-bottom: var(--sp-3);
+}
+
+.future-hero-box__desc {
+  font-size: 1.15rem;
+  color: #57534E;
+  max-width: 680px;
+  margin-left: auto;
+  margin-right: auto;
+}

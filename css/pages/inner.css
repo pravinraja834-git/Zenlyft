@@ -1,0 +1,371 @@
+/* ============================================================
+   ZenLyft Official Startup Company Website : Inner Pages Styles
+   ============================================================ */
+
+/* Page Header */
+.page-header {
+  padding-top: calc(var(--nav-height) + var(--sp-4));
+  padding-bottom: var(--sp-6);
+  border-bottom: 1px solid var(--color-border-subtle);
+  background-color: var(--color-bg);
+}
+
+@media (min-width: 992px) {
+  .page-header {
+    padding-top: calc(var(--nav-height) + var(--sp-6));
+    padding-bottom: var(--sp-8);
+  }
+}
+
+.page-header__inner {
+  max-width: 800px;
+}
+
+.page-header__title {
+  font-size: clamp(2.25rem, 4.5vw, 3.5rem);
+  margin-bottom: var(--sp-3);
+}
+
+.page-header__desc {
+  font-size: 1.2rem;
+  line-height: 1.7;
+  color: var(--color-text-secondary);
+}
+
+/* Beliefs & Principles Bento Grid */
+.beliefs-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+@media (min-width: 640px) {
+  .beliefs-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-5);
+  }
+}
+
+@media (min-width: 992px) {
+  .beliefs-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sp-5);
+  }
+
+  .belief-card--featured {
+    grid-column: span 2;
+  }
+}
+
+.belief-card {
+  background-color: #FAF7F2;
+  border: 2px solid #1C1917;
+  padding: var(--sp-4);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  position: relative;
+  overflow: hidden;
+  box-shadow: 5px 5px 0px #1C1917;
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+
+@media (min-width: 480px) {
+  .belief-card {
+    padding: var(--sp-5);
+  }
+}
+
+.belief-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #C85A32;
+}
+
+.belief-card__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: var(--sp-4);
+}
+
+.belief-card__tag {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #FAF7F2;
+  background-color: #1C1917;
+  border: 1px solid #1C1917;
+  padding: 0.2rem 0.5rem;
+}
+
+.belief-card__icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #FAF7F2;
+  background-color: #1C1917;
+  border: 1px solid #1C1917;
+  font-family: var(--font-mono);
+  font-weight: 700;
+  font-size: 0.85rem;
+}
+
+.belief-card__title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1C1917;
+  margin-bottom: var(--sp-2);
+  line-height: 1.25;
+}
+
+.belief-card__text {
+  font-size: 0.98rem;
+  color: #57534E;
+  line-height: 1.65;
+}
+
+/* Values Grid */
+.values-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+@media (min-width: 640px) {
+  .values-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: var(--sp-5);
+  }
+}
+
+@media (min-width: 992px) {
+  .values-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--sp-5);
+  }
+}
+
+.value-item {
+  background-color: #FAF7F2;
+  border: 2px solid #1C1917;
+  padding: var(--sp-5);
+  display: flex;
+  flex-direction: column;
+  box-shadow: 5px 5px 0px #1C1917;
+  transition: transform var(--t-base), box-shadow var(--t-base);
+}
+
+.value-item:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 7px 7px 0px #C85A32;
+}
+
+.value-item__badge {
+  font-family: var(--font-mono);
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: #C85A32;
+  margin-bottom: var(--sp-2);
+}
+
+.value-item__name {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1C1917;
+  margin-bottom: var(--sp-2);
+}
+
+.value-item__text {
+  font-size: 0.98rem;
+  color: #57534E;
+  line-height: 1.65;
+}
+
+/* Careers Grid */
+.careers-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-4);
+  margin-top: var(--sp-6);
+}
+
+@media (min-width: 768px) {
+  .careers-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.career-dept-card {
+  background-color: #FAF7F2;
+  border: 2px solid #1C1917;
+  padding: var(--sp-5);
+  box-shadow: 5px 5px 0px #1C1917;
+}
+
+.career-dept-card__title {
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1C1917;
+  margin-bottom: var(--sp-1);
+}
+
+.career-dept-card__text {
+  font-size: 0.95rem;
+  color: #57534E;
+}
+
+.careers-notice {
+  background-color: #F5F0E6;
+  border: 2px solid #1C1917;
+  padding: var(--sp-6);
+  margin-top: var(--sp-8);
+  text-align: center;
+  box-shadow: 6px 6px 0px #1C1917;
+}
+
+.careers-notice__title {
+  font-family: var(--font-display);
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: #1C1917;
+  margin-bottom: var(--sp-2);
+}
+
+.careers-notice__text {
+  color: #57534E;
+}
+
+/* Contact Form */
+.contact-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--sp-8);
+}
+
+@media (min-width: 840px) {
+  .contact-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+.contact-info {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-5);
+}
+
+.contact-info-item__label {
+  font-family: var(--font-mono);
+  font-size: 0.8rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #C85A32;
+  margin-bottom: var(--sp-1);
+}
+
+.contact-info-item__val {
+  font-size: 1.05rem;
+  color: #1C1917;
+  font-weight: 600;
+}
+
+.contact-form {
+  background-color: #FAF7F2;
+  border: 2px solid #1C1917;
+  padding: var(--sp-6);
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-4);
+  box-shadow: 8px 8px 0px #1C1917;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  gap: var(--sp-1);
+}
+
+.form-label {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #1C1917;
+}
+
+.form-input,
+.form-select,
+.form-textarea {
+  width: 100%;
+  background-color: #FAF7F2;
+  border: 2px solid #1C1917;
+  padding: 0.75rem 1rem;
+  color: #1C1917;
+  font-family: var(--font-body);
+  font-size: 0.98rem;
+  box-shadow: 3px 3px 0px rgba(28, 25, 23, 0.15);
+  transition: border-color var(--t-fast), box-shadow var(--t-fast);
+}
+
+.form-input:focus,
+.form-select:focus,
+.form-textarea:focus {
+  outline: none;
+  border-color: #1C1917;
+  box-shadow: 4px 4px 0px #C85A32;
+}
+
+.form-textarea {
+  min-height: 120px;
+  resize: vertical;
+}
+
+/* Legal Documents */
+.legal-content {
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #FAF7F2;
+  border: 2px solid #1C1917;
+  padding: var(--sp-6);
+  box-shadow: 8px 8px 0px #1C1917;
+}
+
+.legal-section {
+  margin-bottom: var(--sp-6);
+}
+
+.legal-section h2 {
+  font-family: var(--font-display);
+  font-size: 1.45rem;
+  color: #1C1917;
+  margin-bottom: var(--sp-2);
+}
+
+.legal-section p, .legal-section ul {
+  font-size: 1rem;
+  color: #57534E;
+  line-height: 1.7;
+}
+
+.legal-section ul {
+  padding-left: var(--sp-4);
+  margin-top: var(--sp-2);
+}
+
+.legal-section li {
+  margin-bottom: var(--sp-1);
+}
