@@ -1011,12 +1011,12 @@
 
 @media (max-width: 768px) {
   .papercut-stage__canvas {
-    height: 360px;
+    height: 340px;
   }
   .papercut-stage__brand-word {
     margin-bottom: -2.5rem;
   }
-  /* Scale down side figures to prevent overflow */
+  /* Scale down figures so they fit within the canvas */
   .papercut-person--sanjay {
     width: 30%;
   }
@@ -1026,17 +1026,17 @@
   .papercut-person--pravinraj {
     width: 30%;
   }
+  /* Hide tape notes on mobile — names/roles are shown in the cards below */
+  .papercut-person__tape-note {
+    display: none;
+  }
 }
 
 @media (max-width: 480px) {
-  .papercut-stage-banner {
-    overflow: visible;
-    padding-bottom: var(--sp-4);
-  }
   .papercut-stage__canvas {
     height: 260px;
   }
-  /* Keep figures smaller and contained */
+  /* Keep figures smaller and well-separated */
   .papercut-person--sanjay {
     width: 28%;
     left: 2%;
@@ -1048,17 +1048,6 @@
   .papercut-person--pravinraj {
     width: 28%;
     right: 2%;
-  }
-  /* Shrink tape notes on very small screens */
-  .papercut-person__tape-note {
-    padding: 0.25rem 0.5rem;
-    bottom: 15px;
-  }
-  .papercut-person__name {
-    font-size: 0.72rem;
-  }
-  .papercut-person__role {
-    font-size: 0.85rem;
   }
 }
 
